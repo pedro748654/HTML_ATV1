@@ -1,0 +1,28 @@
+
+<script>
+function criarContador() {
+    let numero = 0;
+
+    return {
+        incrementar: function() {
+            numero++;
+            mostrar();
+        },
+
+        decrementar: function() {
+            numero--;
+            mostrar();
+        },
+
+        valor: function() {
+            return numero;
+        }
+    };
+}
+
+let contador = criarContador();
+
+function mostrar() {
+    document.getElementById("valor").textContent = contador.valor();
+}
+</script>

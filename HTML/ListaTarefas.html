@@ -1,0 +1,13 @@
+<script>
+function adicionarTarefa() {
+    let tarefa = document.getElementById("tarefa").value;
+    let lista = document.getElementById("lista");
+
+    if (tarefa !== "") {
+        let item = document.createElement("li");
+        item.textContent = tarefa;
+        lista.appendChild(item);
+        document.getElementById("tarefa").value = "";
+    }
+}
+</script>

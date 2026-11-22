@@ -1,0 +1,10 @@
+<script>  
+let notas = [5, 7, 8, 6, 9];
+
+let aprovadas = notas.filter(nota => nota >= 7);
+
+let novasNotas = notas.map(nota => nota + 1);
+
+alert("Aprovadas: " + aprovadas.join(", "));
+alert("Notas com +1: " + novasNotas.join(", "));
+  </script>
